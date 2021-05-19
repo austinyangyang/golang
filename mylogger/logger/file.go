@@ -67,7 +67,7 @@ func (fl *FileLogger) initFile() error {
 
 func (fl *FileLogger) FileSplit(file *os.File) (*os.File, error) {
 
-	nowstr := time.Now().Format("200601021504")
+	nowstr := time.Now().Format("20060102150405000")
 
 	fileInfo, err := file.Stat()
 	if err != nil {

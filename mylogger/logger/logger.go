@@ -88,9 +88,6 @@ func (l Logger) enabled(logLevel LogLevel) bool {
 	return logLevel >= l.Level
 }
 
-
-
-
 func (l *Logger) logPrint(lv LogLevel, format string, args ...interface{}) {
 	var times string
 	if l.enabled(lv) {
